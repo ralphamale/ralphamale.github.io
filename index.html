@@ -62,9 +62,9 @@
 				<ul class="navigation">
 					<li data-slide="1">Home</li>
 					<li data-slide="2">About Me</li>
-
-					<li data-slide="3">Projects</li>
-					<li data-slide="4">Contact</li>
+          <li data-slide="3">Resume</li>
+					<li data-slide="4">Projects</li>
+					<li data-slide="5">Contact</li>
 				</ul>
 			</div>
 
@@ -77,7 +77,7 @@
 
 			<div id="content" class="grid_7">
 				<h1 id="yes">Yes.</h1>
-				<h2>Let's ready to make magic.</h2>
+				<h2>Let's make magic happen.</h2>
 				<p>Hi! My name is Ralph Nguyen and I am a web developer based in New York.</p>
         <p>I specialize in Ruby on Rails, JavaScript, Backbone.js, SQL, jQuery, and HTML/CSS3.
 				<p>You should hire me.</p>
@@ -96,10 +96,29 @@
 
 
         </p>
-			</div>
-			<div id="decorative" class="grid_5 omega">
+			</div> <!-- floating-pic is-floating -->
+			<div id="decorative" class="grid_5 omega " style="z-index: 5">
 				<img src="images/decorative.jpg">
 			</div>
+
+      <style>
+
+      .floating-pic {
+        left: 856px;
+      }
+
+      .is-not-floating {
+        position: absolute;
+        top: 140px;
+
+      }
+
+      .is-floating {
+        position: fixed;
+      }
+      </style>
+
+
 
 		</div>
 	</div>
@@ -109,8 +128,8 @@
 	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
-			<div id="content" class="grid_12">
-				<h1>About Me / My Resume</h1>
+			<div id="content" class="grid_7">
+				<h1>About Me</h1>
 
 
 
@@ -123,12 +142,409 @@
 
 			</div>
 
+
 		</div>
 	</div>
 
+<style>
+  .resume-slide button {
+    background-color: #18acda;
+    border: 0;
+    padding: 10px 30px 10px 30px;
+margin: 5px;
+    color: white;
+  }
+
+</style>
+
+  <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+    <div class="container clearfix">
+      <div id="content" class="grid_12 resume-slide">
+        <h1> Resume </h1>
+
+      <!-- <div class="toggle-resume">
+        <button class="view-resume">
+          View In-Browser
+        </button>
+
+        <button class="hide-resume">
+          Hide
+        </button>
+
+      </div>
+
+      <button class="download-resume">Download</button> -->
+
+        <style>
+        div.whole-resume {
+          font: 1em/1.231 arial,helvetica,clean,sans-serif;
+          margin: 0 auto;
+          width: 90%;
+        }
+
+        .header-resume > h1#name {
+          text-transform: uppercase;
+          font-family: "GillSans-Light", "Gill Sans Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 48pt;
+          letter-spacing: -2px;
+          color: darkorange;
+          margin-left: -5px;
+          float: left;
+          font-style: normal;
+          font-weight: normal;
+          margin-top: .65em;
+        }
+
+        #contact-details {
+          float: left;
+          padding-left: 1em;
+          margin-bottom: 1em;
+          font: .75em/1.231 arial,helvetica,clean,sans-serif;
+        }
+
+        #contact-details > a {
+
+        }
+
+        ul.resume-sections {
+          padding: 0;
+          /*list-style-type: none;*/
+        }
+
+        li.resume-section {
+          width: 100%;
+          float: left;
+          clear: both;
+          margin-bottom: 1em;
+          padding-top: 0.5em;
+          border-top: 1px solid #EEE;
+          list-style: none;
+        }
+
+        li.resume-section > h3 {
+          width: 30%;
+          display: block;
+          float: left;
+          font-size: 2em;
+
+          color: #DDD;
+          font-family: "GillSans-Light", "Gill Sans Light","Helvetica Neue", Helvetica, Arial, sans-serif;
+          text-transform: uppercase;
+          font-weight: normal;
+          font-style: normal;
+          margin-top: -4px;
+        }
+
+        ul.section-items {
+          width: 64%;
+          float: right;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .item-header-left > h4 {
+          margin: 0;
+          font-size: 1.5em;
+          color: darkorange;
+          font-family: "GillSans-Light", "Gill Sans Light","Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: normal;
+        }
+
+        .item-header {
+          margin-bottom: 0.2em;
+        }
+
+        .item-header-left > h5 {
+          margin: 0;
+          font-weight: bold;
+          font-size: .9em;
+        }
+
+        .item-header-left {
+          float: left;
+        }
+
+        .item-header-right {
+          float: right;
+          color: #DDD;
+          font-size: 1em;
+          font-weight: bold;
+        }
+
+        .section-item > p {
+          margin: 0 0 1em 0;
+        }
+
+        .resume-code-link {
+          margin-top: 1px;
+          color: #888;
+
+        }
+
+        </style>
+
+        <div class="whole-resume" style="border: 1px solid grey; padding: 45px">
+          <div class="header-resume clearfix">
+            <h1 id="name">Ralph Nguyen | </h1>
+            <div id="my-contact">
+            <br>
+          		<div id="contact-details">
+                <a class="email"
+                  href="mailto:firstnamelastinitial@alumni.stanford.edu">
+                    firstnamelastinitial@alumni.stanford.edu
+                </a>
+                <br>
+                <a class="website"
+                  href="http://www.shouldihireralph.com/" target="_blank">
+                    shouldihireralph.com
+                </a>
+                <br>
+                <a class="url"
+                  href="http://www.github.com/ralphamale">
+                  GitHub
+                </a> |
+                <a class="url"
+                  href="http://www.linkedin.com/pub/ralph-nguyen/20/b1a/408/">
+                  LinkedIn Profile
+                </a>
+                <div id="rn-resume-updated">
+                	Last Updated: March 2014
+              	</div>
+            	</div>
+            </div>
+          </div>
+
+          <ul class="resume-sections clearfix">
+              <li class="resume-section clearfix">
+                <h3>Education</h3>
+                <ul class="section-items">
+                  <li class="section-item clearfix">
+                    <header class="item-header clearfix">
+                      <div class="item-header-left">
+                        <h4>Stanford University</h4>
+                        <h5>M.A. Sociology, B.A. Psychology</h5>
+                      </div>
+                      <div class="item-header-right">
+                          Graduated 2012
+                      </div>
+                    </header>
+
+                    <p>
+                      - CS coursework: CS 106A - Programming Methodology,
+                      CS 106B - Programming Abstractions, CS 107 - Computer
+                      Organization and Systems, CS 103 - Mathematical
+                      Foundations of Computing <br>
+                      - Other relevant coursework: Experimental Research in
+                       Advanced User Interfaces, Improv and Design <br>
+                      - Completed B.A. and M.A. in four years with 3.7 GPA
+
+                    </p>
+                  </li>
+                  <li class="section-item clearfix">
+                    <header class="item-header clearfix">
+                      <div class="item-header-left">
+                        <h4>Taravella High School</h4>
+                      </div>
+                      <div class="item-header-right">
+                          Graduated 2008
+                      </div>
+                    </header>
+
+                    <p>
+                      - Valedictorian. Perfect score on SAT Math Level II.
+                       SAT: 750 Math, 730 Verbal. Coca-Cola Scholar.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="resume-section clearfix">
+                <h3>Projects</h3>
+                <ul class="section-items">
+                  <li class="section-item clearfix">
+                    <header class="item-header clearfix">
+                      <div class="item-header-left">
+                        <h4>Flirtatiously</h4>
+                        <h5>Ruby on Rails, JavaScript</h5>
+                        <div class="resume-code-link">Source | Deployed</div>
+                      </div>
+                      <div class="item-header-right">
+                          2014
+                      </div>
+                    </header>
+
+                    <p>
+                      - This OKCupid and Tinder hybrid clone calculates
+                      match percentages between users by examining 1)
+                      the user’s answers to personality questions 2) how
+                      the user wants others to answer 3) how important
+                      the question is to the user. <br>
+                      - Hand-built AJAX photo uploader <br>
+                      - Hand-built search filter to narrow down profile
+                      results, Tinder matches, and “Users Near You” <br>
+                      - Notification system to inform users of new Tinder
+                      matches and new messages <br>
+                      - UJS/AJAX for profile editing, messaging, and
+                      answering personality questions for responsiveness
+                    </p>
+                  </li>
+                  <li class="section-item clearfix">
+                    <header class="item-header clearfix">
+                      <div class="item-header-left">
+                        <h4>Active Record Lite</h4>
+                        <h5>Ruby</h5>
+                        <div class="resume-code-link">Source</div>
+                      </div>
+                      <div class="item-header-right">
+                          2014
+                      </div>
+                    </header>
+
+                    <p>
+                      - Clone of ActiveRecord’s ORM features to explore
+                       Ruby metaprogramming. Includes mass assignment,
+                       querying, and association methods.
+                    </p>
+                  </li>
+                  <li class="section-item clearfix">
+                    <header class="item-header clearfix">
+                      <div class="item-header-left">
+                        <h4>Asteroids.js</h4>
+                        <h5>JavaScript, HTML5 Canvas</h5>
+                        <div class="resume-code-link">Source | Deployed</div>
+                      </div>
+                      <div class="item-header-right">
+                          2014
+                      </div>
+                    </header>
+
+                    <p>
+                      - Clone of ActiveRecord’s ORM features to explore
+                       Ruby metaprogramming. Includes mass assignment,
+                       querying, and association methods.
+                    </p>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="resume-section clearfix">
+                <h3>Skills</h3>
+                <ul class="section-items">
+                  <li class="section-item clearfix">
+                    <header class="item-header clearfix">
+                      <div class="item-header-left">
+                        <h4>Technologies</h4>
+
+                    </header>
+
+                    <p>
+                      Ruby on Rails, JavaScript, Backbone.js, PostgreSQL, jQuery, CSS3, HTML, Git, TDD, Java, C
+                    </p>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="resume-section clearfix">
+                <h3>Work Experience</h3>
+                <ul class="section-items">
+                  <li class="section-item clearfix">
+                    <header class="item-header clearfix">
+                      <div class="item-header-left">
+                        <h4>Autodesk</h4>
+                        <h5>Intern Product Manager</h5>
+                      </div>
+                      <div class="item-header-right">
+                          Summer 2010
+                      </div>
+                    </header>
+
+                    <p>
+                      - Intern for AutoCAD Freestyle team. Also
+                      contributed to user experience research.
+
+                    </p>
+                  </li>
+                  <li class="section-item clearfix">
+                    <header class="item-header clearfix">
+                      <div class="item-header-left">
+                        <h4>Ralph Nguyen Tutoring</h4>
+                        <h5>Competitive Math and SAT Tutor</h5>
+                      </div>
+                      <div class="item-header-right">
+                          2008 - 2013
+                      </div>
+                    </header>
+
+                    <p>
+                      - Achievements include helping students get
+                      perfect scores on the SAT Math II and SAT Chemistry.
+                    </p>
+                  </li>
+
+                  <li class="section-item clearfix">
+                    <header class="item-header clearfix">
+                      <div class="item-header-left">
+                        <h4>Stanford University</h4>
+                        <h5>Digital Media Intern</h5>
+                      </div>
+                      <div class="item-header-right">
+                          2010 - 2012
+                      </div>
+                    </header>
+
+                    <p>
+                      - Developed social media content strategy plan to
+                      facilitate 120% 2-year growth of audience base
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="resume-section clearfix">
+                <h3>Additional Info</h3>
+                <ul class="section-items">
+                  <li class="section-item clearfix">
+                    <header class="item-header clearfix">
+                      <div class="item-header-left">
+                        <h4>Other Passions</h4>
+                      </div>
+                    </header>
+
+                    <p>
+                      Ultra-endurance sports (completed 5 marathons),
+                      backpack traveling, and improv (5M+ views and advanced
+                      study at Upright Citizens Brigade)
+
+                    </p>
+                  </li>
+
+                </ul>
+              </li>
 
 
-	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+
+          </ul>
+
+
+
+
+
+
+          <!-- bottom of whole-resume here -->
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">
@@ -218,7 +634,7 @@
 
 
 
-	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+	<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">
@@ -254,6 +670,27 @@
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/jquery.stickem.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('.container').stickem();
+		});
+	</script>
+
+  <script>
+  // $(document).ready(function() {
+  //   $floatingPic = $('.floating-pic')
+  //
+  //
+  //   while ($floatingPic.offset().top <= 140 || $floatingPic.offset().top >= 844.1875) {
+  //     $floatingPic.removeClass('is-floating');
+  //     $floatingPic.addClass('is-not-floating');
+  //   }
+  // });
+
+ </script>
+
 	<!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
 </body>
 </html>
