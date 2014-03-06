@@ -13,6 +13,40 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <style>
+
+  ul.projects {
+    list-style-type: none;
+  }
+
+  ul.projects > li {
+    display: block;
+    float: left;
+    width: 27%;
+    height: 400px;
+    margin: 0 3% 3% 3%;
+    background-color: transparent;
+  }
+
+  ul.projects > li > img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .project-title {
+    color: #f68f67;
+  }
+
+  #slide1 h1#yes {
+    font-size: 9em;
+    margin-top: .5em;
+    margin-bottom: .8em;
+  }
+  </style>
+
+
 </head>
 
 <body>
@@ -26,8 +60,9 @@
 
 			<div id="nav" class="grid_9 omega">
 				<ul class="navigation">
-					<li data-slide="1">Top Slide</li>
+					<li data-slide="1">Home</li>
 					<li data-slide="2">About Me</li>
+
 					<li data-slide="3">Projects</li>
 					<li data-slide="4">Contact</li>
 				</ul>
@@ -41,17 +76,17 @@
 		<div class="container clearfix">
 
 			<div id="content" class="grid_7">
-				<h1>Yes.</h1>
-				<h2>Let's ready to make magic!</h2>
+				<h1 id="yes">Yes.</h1>
+				<h2>Let's ready to make magic.</h2>
 				<p>Hi! My name is Ralph Nguyen and I am a web developer based in New York.</p>
         <p>I specialize in Ruby on Rails, JavaScript, Backbone.js, SQL, jQuery, and HTML/CSS3.
-				<p>Don't forget to follow me!</p>
+				<p>You should hire me.</p>
 				<p>
 
 
 
 
-          <a href="https://twitter.com/ralphamale" target="_blank"><img src="images/twitter.png"></a>
+          <!-- <a href="https://twitter.com/ralphamale" target="_blank"><img src="images/twitter.png"></a> -->
           <a href="http://www.linkedin.com/pub/ralph-nguyen/20/b1a/408" target="_blank"><img src="images/linkedin.png"></a>
         <a href="https://angel.co/ralph-nguyen" target="_blank"><img src="images/angellist.png"></a>
         <a href="https://github.com/ralphamale" target="_blank"><img src="images/github.png"></a>
@@ -87,27 +122,7 @@
         <h3>Outside of web development, I am an ultra-endurance enthusiast (5 marathons and counting), backpack traveler (19 countries), and UCB-trained improvisor.</h3>
 
 
-        <h3>Flirtatiously</h3>
 
-        <p>OKCUpid and Tinder hybrid clone with same quiz-based matching algorithm, photo uploader and search built from scratch, and notifications system</p>
-
-        <h3>
-        Snake
-        </h3>
-
-        <p>Minimalist implentation of Snake. Game board is made by manipulating divs. Used jQuery and Underscore.js. JavaSCript, jQuery, HTML, CSS (Source | Deployed) </p>
-
-        <h3>ActiveRecord Lite</h3>
-
-        <p>Clone of ActiveRecord's ORM features to explore Ruby metaprogramming. Includes mass assignment, querying, and associatio methods.</p>
-
-        <h3>Rails Lite</h3>
-
-        <p>A miniature reconstructed version of Ruby on Rails. (Source)</p>
-
-        <h3>Asteroids</h3>
-
-        <p>Classic arcade game in browser with JavaScript and HTML5 Canvas. Calculates object velocities using trigonometric functions. (Source | Deployed)</p>
 
 <p>Check out more of my work on my         <a href="https://github.com/ralphamale" target="_blank"><img src="images/github.png"></a>.
 			</div>
@@ -121,23 +136,86 @@
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">
-        <h1> My RESUME WILL GO HERE!!! </h1>
-				<h1>Grid</h1>
-				<h2>See how the grid changes when you resize your screen</h2>
-			</div>
+        <h1> Projects </h1>
 
-			<div id="test" class="grid_1">1</div> <div id="test" class="grid_11 omega">11</div>
-			<div id="test" class="grid_2">2</div> <div id="test" class="grid_10 omega">10</div>
-			<div id="test" class="grid_3">3</div> <div id="test" class="grid_9 omega">9</div>
-			<div id="test" class="grid_4">4</div> <div id="test" class="grid_8 omega">8</div>
-			<div id="test" class="grid_5">5</div> <div id="test" class="grid_7 omega">7</div>
-			<div id="test" class="grid_6">6</div> <div id="test" class="grid_6 omega">6</div>
-			<div id="test" class="grid_7">7</div> <div id="test" class="grid_5 omega">5</div>
-			<div id="test" class="grid_8">8</div> <div id="test" class="grid_4 omega">4</div>
-			<div id="test" class="grid_9">9</div> <div id="test" class="grid_3 omega">3</div>
-			<div id="test" class="grid_10">10</div> <div id="test" class="grid_2 omega">2</div>
-			<div id="test" class="grid_11">11</div> <div id="test" class="grid_1 omega">1</div>
-			<div id="test" class="grid_12">12</div>
+
+
+				<ul class="projects clearfix">
+        <li>
+          <img src="images/snake.jpg">
+          <h3 class="project-title">
+            Snake
+          </h3>
+
+          <p>
+            Minimalist implentation of Snake.
+            Game board is made by manipulating divs.
+            Used jQuery and Underscore.js.
+            JavaScript, jQuery, HTML, CSS
+            (<a href="http://www.github.com/ralphamale/snake">Source</a> | <a href="snake.html">Deployed</a>)
+          </p>
+        </li>
+
+        <li>
+          <img src="images/flirtatiously.jpg">
+          <h3 class="project-title">Flirtatiously</h3>
+
+          <p>OKCupid and Tinder hybrid clone with same quiz-based
+             matching algorithm, photo uploader and search built from
+            scratch, and notifications system. Demo account:
+            "demo" with any password.
+          (<a href="https://github.com/ralphamale/flirtatiously">Source</a> |
+          <a href="http://ralph-date.herokuapp.com">Deployed</a>)
+          </p>
+
+        </li>
+
+        <li>
+          <img src="images/rails-lite.jpg">
+          <h3 class="project-title">Rails Lite</h3>
+
+          <p>A miniature reconstructed version of Ruby on Rails. (
+            <a href="https://github.com/ralphamale/rails_lite">Source</a>)</p>
+
+        </li>
+
+        <li>
+          <img src="images/activerecord.jpg">
+          <h3 class="project-title">ActiveRecord Lite</h3>
+
+          <p>Clone of ActiveRecord's ORM features
+            to explore Ruby metaprogramming. Includes
+             mass assignment, querying, and
+             association methods. (
+             <a href="https://github.com/ralphamale/aa_active_record">
+               Source
+             </a>)
+           </p>
+        </li>
+
+        <li>
+          <img src="images/asteroids.jpg">
+          <h3 class="project-title">Asteroids</h3>
+
+          <p>Classic arcade game in browser with
+            JavaScript and HTML5 Canvas. Calculates
+            object velocities using trigonometric
+             functions. (
+             <a href="https://github.com/ralphamale/asteroids">Source</a> |
+             <a href="asteroids.html">Deployed</a>)</p>
+        </li>
+
+        <li>
+          <img src="images/github-big.jpg">
+          <h3 class="project-title">GitHub: Ralphamale</h3>
+
+          <p>
+            For more projects, check out my <a href="http://www.github.com/ralphamale">GitHub</a>.
+          </p>
+
+
+        </ul>
+			</div>
 
 		</div>
 	</div>
@@ -156,7 +234,7 @@
 
 
 
-          <a href="https://twitter.com/ralphamale" target="_blank"><img src="images/twitter.png"></a>
+          <!-- <a href="https://twitter.com/ralphamale" target="_blank"><img src="images/twitter.png"></a> -->
                     <a href="http://www.linkedin.com/pub/ralph-nguyen/20/b1a/408" target="_blank"><img src="images/linkedin.png"></a>
                   <a href="https://angel.co/ralph-nguyen" target="_blank"><img src="images/angellist.png"></a>
                   <a href="https://github.com/ralphamale" target="_blank"><img src="images/github.png"></a>
