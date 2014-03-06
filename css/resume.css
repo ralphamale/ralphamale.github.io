@@ -1,0 +1,240 @@
+﻿.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+body {
+    width: 950px;
+    margin: auto;
+	font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	color: #00000;
+
+	}
+a,
+a:link,
+a:active,
+a:visited {
+    color: #C83;
+    border-bottom: 1px dotted #FC9;
+    text-decoration: none;
+}
+a:hover {
+    color: darkorange;
+    border-bottom: 1px solid darkorange;
+}
+
+p {
+    font-size: 100%;
+    margin-bottom: 1em;
+}
+
+/* page */
+
+#rn-resume {
+    width: 940px;
+    float: none;
+    clear: both;
+    margin: 2em 0 0.5em 0.5em;
+}
+.cw-hide {
+    display: none;
+}
+
+/* info column, far right */
+
+#rn-resume-info {
+   /* width: 535px; */
+    float: none;
+    margin-bottom: 1em;
+
+
+}
+#rn-resume-info em {
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    font-style: normal;
+    /* font-size: 100px; */
+	font-family: "GillSans-Light", "Gill Sans Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   	/*  font-size: 500%; ‘Lucida Sans Unicode’, ‘Lucida Grande’   */
+    font-size: 48pt;
+
+    letter-spacing: -2px;
+    color: darkorange;
+    margin-left: -5px;
+    float: left;
+
+}
+#rn-resume-info h2 {
+    font-size: 85%;
+    color: #999;
+    margin: -10px 0 3em 0;
+}
+#rn-resume-info-contact {
+    font-size: 100%;
+}
+#contact-details {
+float:left;
+padding-left:1em;
+}
+
+#rn-resume-info-contact h1 {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+#rn-resume-info-contact ul li {
+    margin-bottom: 0.1em;
+
+
+}
+#rn-resume-info-contact ul,
+#rn-resume-info-contact div {
+    margin-bottom: 1em;
+
+}
+#rn-resume-info-contact-email {
+    padding-top: 0.7em;
+}
+#rn-resume-updated {
+    color: #CCC;
+}
+
+/* main sections column */
+
+#rn-resume-sections {
+    width: 760px;
+    float: left;
+    margin-top: 1.0em;
+}
+.rn-resume-section {
+    width: 760px;
+    float: left;
+    clear: both;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    border-top: 1px solid #EEE;
+}
+.rn-resume-section h3 {
+    width: 160px;
+    float: left;
+    margin-top: -4px;
+    color: #DDD;
+    font-family: "GillSans-Light", "Gill Sans Light","Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 231%;
+    text-transform: uppercase;
+}
+.rn-resume-section-content {
+    width: 485px;
+    float: right;
+}
+
+
+/* job history */
+
+.listed-block {
+    margin-bottom: 1.5em;
+}
+.listed-block-info {
+    width: 485px;
+    float: left;
+    clear: both;
+    margin-bottom: 0.2em;
+}
+.listed-block-info-whowhatwhere {
+    width: 240px;
+    float: left;
+}
+h4 {
+    margin-left: -1px;
+  /*  font-weight: bold; */
+      font-family: "GillSans-Light", "Gill Sans Light","Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+    font-size: 138.5%;
+    color: darkorange;
+}
+h4 a,
+h4 a:link,
+h4 a:active,
+h4 a:visited {
+    color: darkorange;
+    border-bottom: 1px dotted #FC9;
+    text-decoration: none;
+}
+h4 a:hover {
+    border: 0;
+    text-decoration: underline;
+}
+h5 {
+    font-size: 95%;
+    font-weight: bold;
+}
+.grayed-text {
+    margin-top: 1px;
+    color: #BBB;
+    font-size: 100%;
+}
+.dates-happened {
+    width: 240px;
+    float: right;
+    margin-top: 0em;
+    color: #DDD;
+    text-align: right;
+    font-size: 116%;
+    font-weight: bold;
+}
+
+/* skills */
+
+#rn-resume-skills {
+    margin-bottom: 1em;
+}
+#rn-resume-skills a,
+#rn-resume-skills a:link,
+#rn-resume-skills a:active,
+#rn-resume-skills a:visited {
+    color: #555;
+    border: 0;
+    text-decoration: none;
+}
+#rn-resume-skills a:hover {
+    border-bottom: 1px dotted #FC9;
+}
+.rn-resume-skills-area {
+
+
+    float: left;
+
+
+}
+.not-listings h4 {
+    margin-bottom: 0.5em;
+}
+.rn-resume-skills-set {
+    font-size: 100%;
+    margin-bottom: 0.5em;
+    padding-right: 2em;
+}
+.rn-resume-skills-set em {
+    font-weight: bold;
+}
+ul.rn-resume-skills-list li {
+    display: inline;
+}
+
+/* effort */
+
+.rn-resume-effort-area {
+     width: 240px;
+    float: left;
+    margin-bottom: 0.5em;
+}
+
+.rn-resume-awards-area {
+    width: 500px;
+    float: none;
+
+
+  }
