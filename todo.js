@@ -15,8 +15,6 @@ http://www.jrk-design.co.uk/
 
 -Ask for Chamal input on color scheme
 
--Bump font up for resume.
-
 Change font
 
 -Contact Form -- do i really need a whole rails app??
