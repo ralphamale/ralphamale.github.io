@@ -1,3 +1,3 @@
-#TODO
+# SHOULDIHIRERALPH.com
 
-Minify + Concatenate JS + CSS.
+Just my portfolio - you should check it out :)
