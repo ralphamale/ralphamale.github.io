@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+}
+
+.cell {
+  float: left;
+  height: 30px;
+  width: 30px;
+  background: #a1df77;
+  border: 1px solid #92c96e;
+}
+
+.snake {
+  background-color: black;
+  border-color: black;
+}
+
+.apple {
+  background-color: red;
+  border-color: red;
+}
+
+.row {
+  clear: both;
+}
